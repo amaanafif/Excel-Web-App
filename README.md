@@ -44,6 +44,7 @@ headless = true\n\
 enableCORS=false\n\
 port = $PORT\n\
 " > ~/.streamlit/config.toml
+  
 The Procfile is used to first execute the setup.sh and then call streamlit run to run the application.
 
 web: sh setup.sh && streamlit run app.py
