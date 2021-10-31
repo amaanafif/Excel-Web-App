@@ -26,7 +26,9 @@ numpy==1.18.5
 matplotlib==3.3.2
 seaborn==0.11.0
 scikit_learn==0.24.1
+  
 setup.sh and Procfile
+  
 Using the setup.sh and Procfile files you can tell Heroku the needed commands for starting the application.
 
 In the setup.sh file we will create a streamlit folder with a credentials.toml and a config.toml file.
@@ -56,12 +58,15 @@ web: sh setup.sh && streamlit run app.py
 4. Installing the Heroku Command Line Interface (CLI)
 
 5. Login to Heroku
+
 heroku login
 
 6. Deploy the Application
+
 git add .
 git commit -m "some message"
 git push heroku master
 
 7. Check if it is running
-You can check if the application was deployed successfully using heroku ps:scale web=1.
+
+  You can check if the application was deployed successfully using heroku ps:scale web=1.
